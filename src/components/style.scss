@@ -6,8 +6,6 @@ $react-figure-options:(
 
 .react-figure{
   display: block;
-  @extend .webkit-sassui-frame-wrapper;
-
   >figcaption{
     position: absolute;
     z-index: 1;
