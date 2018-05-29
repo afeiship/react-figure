@@ -16,12 +16,6 @@ export default class extends Component {
   };
   /*===properties end===*/
 
-  constructor(inProps) {
-    super(inProps);
-    this.state = {
-    };
-  }
-
   render() {
     const { className, children, caption, ...props } = this.props;
     return (
