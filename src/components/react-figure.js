@@ -19,7 +19,7 @@ export default class extends Component {
   render() {
     const { className, children, caption, ...props } = this.props;
     return (
-      <figure {...props} className={classNames('webkit-sassui-frame-wrapper react-figure', className)}>
+      <figure className={classNames('webkit-sassui-frame-wrapper react-figure', className)} {...props}>
         { children }
         { caption && <figcaption children={caption} /> }
       </figure>
