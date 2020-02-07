@@ -1,64 +1,59 @@
 # react-figure
-> A tiny figure image for react
+> A tiny figure image for react.
 
-## properties:
-```javascript
-
-  static propTypes = {
-    className: PropTypes.string,
-    caption: PropTypes.any
-  };
-
-  static defaultProps = {
-  };
-  
+## installation
+```shell
+npm install -S @feizheng/react-figure
 ```
 
-## install && import:
-```bash
-npm install --save afeiship/react-figure --registry=https://registry.npm.taobao.org
+## update
+```shell
+npm update @feizheng/react-figure
 ```
 
-```js
-import ReactFigure from 'react-figure';
-```
-
-```scss
-// customize your styles:
-$react-figure-options:(
-);
-
-@import 'node_modules/react-figure/dist/style.scss';
-```
+## properties
+| Name      | Type   | Default | Description                           |
+| --------- | ------ | ------- | ------------------------------------- |
+| className | string | -       | The extended className for component. |
+| caption   | any    | -       | Default image caption.                |
 
 
-## usage:
-```jsx
+## usage
+1. import css
+  ```scss
+  @import "~@feizheng/react-figure/dist/style.scss";
 
-// install: npm install afeiship/react-figure --save
-// import : import ReactFigure from 'react-figure'
+  // customize your styles:
+  $react-figure-options: ()
+  ```
+2. import js
+  ```js
+  import ReactFigure from '@feizheng/react-figure';
+  import ReactDOM from 'react-dom';
+  import React from 'react';
+  import './assets/style.scss';
 
-class App extends React.Component {
-  state = {
-
-  };
-
-  constructor(props) {
-    super(props);
-    window.demo = this;
-    window.refs = this.refs;
-    window.rc = this.refs.rc;
+  class App extends React.Component {
+    componentDidMount() {}
+    render() {
+      return (
+        <div className="app-container">
+          <ReactFigure
+            ref="rc"
+            caption="test picture">
+            <img
+              src="https://miro.medium.com/max/2798/1*RAa-e7v7WghBqatRXBy3WQ.jpeg"
+              alt=""
+            />
+          </ReactFigure>
+        </div>
+      );
+    }
   }
 
-  render() {
-    return (
-      <div className="hello-react-figure">
-        <ReactFigure style={{ width: 300, height: 400 }} ref='rc' caption="test">
-          <img src='http://placeholder.qiniudn.com/80x80' alt="" />
-        </ReactFigure>
-      </div>
-    );
-  }
-}
+  ReactDOM.render(<App />, document.getElementById('app'));
 
-```
+  ```
+
+## documentation
+- https://afeiship.github.io/react-figure/

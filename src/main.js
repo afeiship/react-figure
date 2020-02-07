@@ -1,2 +1,2 @@
-import ReactFigure from 'components/react-figure';
+import ReactFigure from './components';
 export default ReactFigure;
