@@ -8,9 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="app-container">
-        <ReactFigure
-          ref="rc"
-          caption="test picture">
+        <ReactFigure caption="test picture">
           <img
             src="https://miro.medium.com/max/2798/1*RAa-e7v7WghBqatRXBy3WQ.jpeg"
             alt=""
