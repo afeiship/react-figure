@@ -21,11 +21,6 @@ export default class ReactFigure extends Component {
     caption: PropTypes.any
   };
 
-  constructor(inProps) {
-    super(inProps);
-    this.state = {};
-  }
-
   render() {
     const { className, caption, children, ...props } = this.props;
     return (
