@@ -1,7 +1,8 @@
 $react-figure-options: () !default;
 
 .react-figure {
-  > img {
-    display: block;
+  // your styles
+  img {
+    vertical-align: middle;
   }
 }

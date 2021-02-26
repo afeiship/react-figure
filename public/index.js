@@ -1,20 +1,20 @@
-import ReactFigure from '../src/main';
-import ReactDOM from 'react-dom';
+import ReactDemokit from '@jswork/react-demokit';
 import React from 'react';
+import ReactDOM from 'react-dom';
+import NxRandomAvatar from '@jswork/next-random-avatar';
+import ReactFigure from '../src/main';
 import './assets/style.scss';
 
 class App extends React.Component {
-  componentDidMount() {}
   render() {
     return (
-      <div className="app-container">
+      <ReactDemokit
+        className="p-3 app-container"
+        url="https://github.com/afeiship/react-figure">
         <ReactFigure caption="test picture">
-          <img
-            src="https://miro.medium.com/max/2798/1*RAa-e7v7WghBqatRXBy3WQ.jpeg"
-            alt=""
-          />
+          <img src={NxRandomAvatar.lego()} alt="" />
         </ReactFigure>
-      </div>
+      </ReactDemokit>
     );
   }
 }

@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import noop from '@feizheng/noop';
-import objectAssign from 'object-assign';
 
 const CLASS_NAME = 'react-figure';
 
@@ -27,7 +24,7 @@ export default class ReactFigure extends Component {
       <figure
         data-component={CLASS_NAME}
         className={classNames(
-          'webkit-sassui-frame-wrapper',
+          'wsui-frame-wrapper',
           CLASS_NAME,
           className
         )}
